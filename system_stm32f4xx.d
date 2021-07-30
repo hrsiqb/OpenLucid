@@ -1,9 +1,0 @@
-.\system_stm32f4xx.o: RTE\Device\STM32F401RETx\system_stm32f4xx.c
-.\system_stm32f4xx.o: .\Files\inc\stm32f4xx.h
-.\system_stm32f4xx.o: .\Files\inc\core_cm4.h
-.\system_stm32f4xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\system_stm32f4xx.o: .\Files\inc\core_cmInstr.h
-.\system_stm32f4xx.o: .\Files\inc\core_cmFunc.h
-.\system_stm32f4xx.o: .\Files\inc\core_cm4_simd.h
-.\system_stm32f4xx.o: .\Files\inc\system_stm32f4xx.h
-.\system_stm32f4xx.o: .\Files\inc\stm32f4xx_conf.h
