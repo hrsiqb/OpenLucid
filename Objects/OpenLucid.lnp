@@ -1,6 +1,8 @@
 --cpu=Cortex-M4.fp
+".\objects\delay.o"
 ".\objects\main.o"
 ".\objects\misc.o"
+".\objects\spi.o"
 ".\objects\stm32f4xx_adc.o"
 ".\objects\stm32f4xx_can.o"
 ".\objects\stm32f4xx_crc.o"
@@ -14,7 +16,6 @@
 ".\objects\stm32f4xx_dma.o"
 ".\objects\stm32f4xx_exti.o"
 ".\objects\stm32f4xx_flash.o"
-".\objects\stm32f4xx_fsmc.o"
 ".\objects\stm32f4xx_gpio.o"
 ".\objects\stm32f4xx_hash.o"
 ".\objects\stm32f4xx_hash_md5.o"
@@ -31,12 +32,22 @@
 ".\objects\stm32f4xx_tim.o"
 ".\objects\stm32f4xx_usart.o"
 ".\objects\stm32f4xx_wwdg.o"
-".\objects\delay.o"
+".\objects\stm32f4xx_it.o"
+".\objects\stm324xg_eval_sdio_sd.o"
+".\objects\stm324xg_eval.o"
 ".\objects\gsm.o"
-".\objects\spi_sd.o"
 ".\objects\ads1299.o"
+".\objects\peripheral_init.o"
+".\objects\coeffs_iir.o"
+".\objects\irq.o"
+".\objects\arm_common_tables.o"
+".\objects\arm_const_structs.o"
+".\objects\arm_biquad_cascade_df2t_init_f32.o"
+".\objects\arm_biquad_cascade_df2t_f32.o"
+".\objects\rtc.o"
 ".\objects\startup_stm32f401xe.o"
 ".\objects\system_stm32f4xx.o"
---ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--library_type=microlib --strict --scatter ".\Objects\OpenLucid.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\OpenLucid.map" -o .\Objects\OpenLucid.axf
